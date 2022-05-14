@@ -1,0 +1,322 @@
+/*Importing fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+
+/*For Mobile*/
+@media (max-width: 600px) {
+  body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(#fff, #f3cc8c);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #info-card {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 6px;
+    background-color: azure;
+  }
+  
+  #info-card img {
+    width: 100%;
+  }
+  
+  #title {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-left: 9px;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+  
+  #title h1, #title h2 {
+    font-family:'Cinzel', serif;
+    color: #e3b261;
+    line-height: 0%;
+  }
+  
+  
+  #home {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+  
+  #home a {
+    background-color: #e3b261;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  #home a:hover {
+    background-color: #fff;
+    color: #e3b261;
+    animation-duration: 500ms;
+  }
+
+  #ing, #steps {
+    width: 95%;
+    background-color: azure;
+    text-align: start;
+    padding: 0px 5px 0px 5px;
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 35%);
+    border-radius: 20px;
+  }
+
+  #ing h2 , #steps h2{
+    font-family:'Cinzel', serif;
+    color: #e3b261;
+  }
+
+  #ing ul {
+    line-height: 2;
+    font-family: arial;
+    font-size: 1rem;
+    list-style: none;
+  }
+
+  #ing li::before{
+    content: '\21AC   ';
+    color: #e3b261;
+  }
+
+  #steps ol {
+    line-height: 2;
+    font-family: arial;
+    font-size: 1rem;
+    text-align: start;
+    color: #e3b261;
+  }
+
+  .black {
+    color: black;
+  }
+}
+
+/*Fot tablets*/
+@media (min-width: 601px) {
+  body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(#fff, #f3cc8c);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #info-card {
+    display: flex;
+    width: 95%;
+    gap: 6px;
+    box-shadow: 2px 7px 17px 0px rgba(0, 0, 0, 0.75);
+    background-color: azure;
+  }
+
+  #info-card img {
+    width: 30%;
+  }
+
+  #title {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding-left: 9px;
+    text-align: justify;
+    padding-top: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+
+  #title h1, #title h2 {
+    font-family:'Cinzel', serif;
+    color: #e3b261;
+    line-height: 0%;
+  }
+
+
+  #home {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 12%;
+    margin-bottom: 10px;
+  }
+
+  #home a {
+    background-color: #e3b261;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  #home a:hover {
+    background-color: #fff;
+    color: #e3b261;
+    animation-duration: 500ms;
+  }
+
+  #ing, #steps {
+    width: 80%;
+    background-color: azure;
+    text-align: start;
+    padding: 0px 25px 0px 20px;
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 35%);
+    border-radius: 20px;
+  }
+
+  #ing h2 , #steps h2{
+    font-family:'Cinzel', serif;
+    color: #e3b261;
+  }
+
+  #ing ul {
+    line-height: 3;
+    font-family: arial;
+    font-size: 1.2rem;
+    list-style: none;
+  }
+
+  #ing li::before{
+    content: '\21AC   ';
+    color: #e3b261;
+  }
+
+  #steps ol {
+    line-height: 2;
+    font-family: arial;
+    font-size: 1.2rem;
+    text-align: start;
+    color: #e3b261;
+  }
+
+  .black {
+    color: black;
+  }
+
+}
+
+/*For PC*/
+@media (min-width: 1280px) {
+  body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(#fff, #f3cc8c);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #info-card {
+    display: flex;
+    width: 70%;
+    gap: 6px;
+    box-shadow: 2px 7px 17px 0px rgba(0, 0, 0, 0.75);
+    background-color: azure;
+  }
+
+  #info-card img {
+    width: 30%;
+  }
+
+  #title {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding-left: 9px;
+    text-align: justify;
+    padding-top: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+
+  #title h1, #title h2 {
+    font-family:'Cinzel', serif;
+    color: #e3b261;
+    line-height: 0%;
+  }
+
+
+  #home {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 12%;
+    margin-bottom: 10px;
+  }
+
+  #home a {
+    background-color: #e3b261;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  #home a:hover {
+    background-color: #fff;
+    color: #e3b261;
+    animation-duration: 500ms;
+  }
+
+  #ing, #steps {
+    width: 50%;
+    background-color: azure;
+    text-align: start;
+    padding: 0px 25px 0px 20px;
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 35%);
+    border-radius: 20px;
+  }
+
+  #ing h2 , #steps h2{
+    font-family:'Cinzel', serif;
+    color: #e3b261;
+  }
+
+  #ing ul {
+    line-height: 3;
+    font-family: arial;
+    font-size: 1.2rem;
+    list-style: none;
+  }
+
+  #ing li::before{
+    content: '\21AC   ';
+    color: #e3b261;
+  }
+
+  #steps ol {
+    line-height: 2;
+    font-family: arial;
+    font-size: 1.2rem;
+    text-align: start;
+    color: #e3b261;
+  }
+
+  .black {
+    color: black;
+  }
+
+}
